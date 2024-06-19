@@ -11,7 +11,7 @@ def detect_crossover_points(monthly_data, sma):
     logging.debug(f"Below SMA:\n{below_sma}")
     
     # Find where close price is above SMA (to detect crossover from above)
-    above_sma = monthly_data['Close'] > sma
+    above_sma = monthly_data['High'] > sma
     logging.debug(f"Above SMA:\n{above_sma}")
     
     # Find crossover points where low price touches and then crosses under SMA

@@ -41,14 +41,16 @@ def create_email_body(stock_info):
                 justify-content: center;
                 align-items: center;
                 height: 100vh;
+                color: white; /* Default text color */
             }}
             .card {{
                 background-color: #2a2a2a;
                 border-radius: 10px;
                 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-                width: 400px;
-                padding: 20px;
+                width: 500px; /* Increased card width */
+                padding: 30px; /* Increased card padding */
                 transition: transform 0.2s;
+                color: white; /* Ensure text color is white */
             }}
             .card:hover {{
                 transform: scale(1.05);
@@ -56,15 +58,17 @@ def create_email_body(stock_info):
             .header {{
                 background-color: #008080;
                 border-radius: 10px 10px 0 0;
-                padding: 10px;
+                padding: 20px; /* Increased header padding */
                 text-align: center;
                 color: #fff;
             }}
             .content {{
                 padding: 20px;
+                color: white; /* Ensure text color is white */
             }}
             .content p {{
                 margin: 10px 0;
+                color: white; /* Ensure text color is white */
             }}
             .label {{
                 font-weight: bold;

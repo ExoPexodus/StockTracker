@@ -7,7 +7,6 @@ from calculate_sma import calculate_sma
 from detect_crossover import detect_crossover_points
 from find_high import find_high_before_crossover
 from send_email import send_email_alert, create_email_body
-
 # Set up logging
 logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
 

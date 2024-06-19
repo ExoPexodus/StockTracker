@@ -4,7 +4,7 @@ A Simple Python based Stock Tracking app serving a specific purpose, a simple fa
 
 ## Overview
 
-This application fetches stock data, resamples it to a monthly frequency, calculates the Simple Moving Average (SMA), and detects crossover points where the stock's monthly low touches and crosses under the SMA. Additionally, it finds the highest stock price before the latest crossover point.
+This application fetches stock data, resamples it to a monthly frequency, calculates the Simple Moving Average (SMA), and detects crossover points where the stock's monthly low touches and crosses under the SMA. Additionally, it finds the highest stock price before the latest crossover point and sends email alerts for new crossover points.
 
 ## Project Structure
 
@@ -13,6 +13,7 @@ This application fetches stock data, resamples it to a monthly frequency, calcul
 - `calculate_sma.py`: Calculates the Simple Moving Average (SMA).
 - `detect_crossover.py`: Detects crossover points where the monthly low touches and crosses under the SMA.
 - `find_high.py`: Finds the highest stock price before the latest crossover point.
+- `send_email.py`: Sends email alerts.
 - `main.py`: Main script to run the application.
 
 ## Requirements
@@ -20,6 +21,7 @@ This application fetches stock data, resamples it to a monthly frequency, calcul
 - Python 3.x
 - `pandas` library
 - `yfinance` library
+- `smtplib` library (included in Python standard library)
 
 You can install the required libraries using:
 
